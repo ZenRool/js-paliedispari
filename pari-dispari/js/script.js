@@ -17,7 +17,4 @@ function btnPlay() {
     const sum = playerNumber + cpuNumber;
     const odd = isOdd(sum);
     res.innerHTML = `La somma di ${playerNumber} e ${cpuNumber} (numero della cpu) è ${sum} ed è ${odd ? `dispari` : `pari`} ed hai ${radiOdd === odd ? `vinto :-)` : `perso :-(`} `;
-    // console.log(odd , " odd");
-    // console.log(radiOdd , " Radio odd");
-
 }
