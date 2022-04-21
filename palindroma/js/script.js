@@ -1,3 +1,5 @@
+// costanti dom 
+let res = document.querySelector(".form > p");
 // FUNZIONI 
 // riceve per argomento una stringa restutuisce true se è palindroma e false se non è palindroma
 function isPalindromeWord(word) {
@@ -10,6 +12,17 @@ function isPalindromeWord(word) {
         
     }
     return true;  
+}
+function buttonPalindrome() {
+    const inputWord = document.getElementById("word").value;
+    res.innerHTML = `La parola ${inputWord}${isPalindromeWord(inputWord) ? `` : ` non`} è palindroma`;
+    
+    // if (!inputWord){
+    //     alert ("Dammi una parola da controllare");
+    //     return false;
+    // }
+
+
 }
 const userWord = prompt ("Dammi la parola da controllare");
 alert (`La parola ${userWord}${isPalindromeWord(userWord) ? `` : ` non`} è palindroma`);
